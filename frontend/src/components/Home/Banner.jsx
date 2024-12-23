@@ -1,4 +1,5 @@
 import { Book, ArrowRight, Truck, Sparkles } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const BookShopBanner = () => {
 	return (
@@ -25,13 +26,17 @@ const BookShopBanner = () => {
 
 					{/* Call to Action Buttons */}
 					<div className="flex flex-col md:flex-row space-y-3 md:space-y-0 md:space-x-4 justify-center md:justify-start items-center">
-						<button className="flex items-center bg-emerald-600 text-white px-4 py-2 md:px-6 md:py-3 rounded-full hover:bg-emerald-700 transition transform hover:scale-105 shadow-lg">
-							Browse Books <Book className="ml-2 w-4 h-4 md:w-5 md:h-5" />
-						</button>
-						<button className="flex items-center border border-gray-300 text-gray-700 px-4 py-2 md:px-6 md:py-3 rounded-full hover:bg-gray-100 transition">
-							Explore Genres{" "}
-							<ArrowRight className="ml-2 w-4 h-4 md:w-5 md:h-5" />
-						</button>
+						<Link to="/products">
+							<button className="flex items-center bg-emerald-600 text-white px-4 py-2 md:px-6 md:py-3 rounded-full hover:bg-emerald-700 transition transform hover:scale-105 shadow-lg">
+								Browse Books <Book className="ml-2 w-4 h-4 md:w-5 md:h-5" />
+							</button>
+						</Link>
+						<Link to="/products">
+							<button className="flex items-center border border-gray-300 text-gray-700 px-4 py-2 md:px-6 md:py-3 rounded-full hover:bg-gray-100 transition">
+								Explore Genres{" "}
+								<ArrowRight className="ml-2 w-4 h-4 md:w-5 md:h-5" />
+							</button>
+						</Link>
 					</div>
 
 					{/* Benefits */}

@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 const books = [
 	{
 		image:
@@ -61,11 +59,6 @@ const FeaturedProduct = () => {
 						</h3>
 						<p className="text-gray-600 mt-2">{book.author}</p>
 						<p className="text-gray-500 mt-2">{book.description}</p>
-						<Link to="/" className="flex flex-col gap-4 mt-4">
-							<button className="bg-emerald-600 text-white py-2 px-4 rounded-md hover:bg-emerald-700">
-								View Details
-							</button>
-						</Link>
 					</div>
 				))}
 			</div>

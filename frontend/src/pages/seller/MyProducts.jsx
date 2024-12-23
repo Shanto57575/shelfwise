@@ -19,7 +19,7 @@ const MyProducts = () => {
 				setLoading(true);
 				try {
 					const response = await API_BASE_URL.get(
-						`/api/product/${user?.email}`,
+						`/api/product/seller/${user?.email}`,
 						{
 							headers: {
 								Authorization: `Bearer ${token}`,

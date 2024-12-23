@@ -14,8 +14,8 @@ const productRouter = express.Router()
 
 productRouter.post('/add-product', verifyJWT, verifySeller, addProduct);
 productRouter.get('/all-products', getAllBooks);
+productRouter.get('/seller/:email', verifyJWT, verifySeller, getProductsBySeller);
 productRouter.get('/:bookId', getbook);
-productRouter.get('/:email', verifyJWT, verifySeller, getProductsBySeller);
 productRouter.put('/:bookId', verifyJWT, verifySeller, updateProduct);
 productRouter.delete('/:bookId', verifyJWT, verifySeller, deleteProduct);
 
