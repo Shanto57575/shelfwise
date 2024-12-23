@@ -71,10 +71,9 @@ This repository contains the source code for a e-commerce application built usin
 
 ### Steps to Run the Application Locally
 
-1. Clone the repositories for both the frontend and backend.
+1. Clone the repository.
    ```bash
-   git clone <frontend-repo-url>
-   git clone <backend-repo-url>
+   git clone https://github.com/Shanto57575/shelfwise.git
    ```
 2. Navigate to each folder and install dependencies:
 
@@ -88,7 +87,7 @@ This repository contains the source code for a e-commerce application built usin
 
 3. Set up environment variables:
    - **Frontend:** Add Firebase configuration.
-   - **Backend:** Add MongoDB URI and JWT secret.
+   - **Backend:** Add MongoDB URI, PORT and JWT secret.
 4. Start the applications:
    - Frontend:
      ```bash
@@ -105,7 +104,7 @@ This repository contains the source code for a e-commerce application built usin
 ## Deployment
 
 The application is deployed and accessible at the following link:
-[Live Application URL](#)
+[https://e-commerce-5e036.web.app](#)
 
 ---
 
